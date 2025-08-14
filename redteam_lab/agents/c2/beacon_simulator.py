@@ -71,7 +71,6 @@ class BeaconSimulator:
             f"count={self.beacon_count}&"
             f"ua={self.user_agent}"
         )
-
     def _send_beacon(self, server: str) -> bool:
         """Send encrypted beacon with network randomization"""
         try:
