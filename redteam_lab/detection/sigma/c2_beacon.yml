@@ -11,6 +11,7 @@ detection:
         packet_size|gt: 128
         ttl|in: [64, 128, 255]
     condition: selection
+    
 falsepositives:
     - Legitimate TLS traffic
 level: high
