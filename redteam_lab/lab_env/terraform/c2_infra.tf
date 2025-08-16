@@ -4,7 +4,6 @@ resource "aws_instance" "c2_server" {
   tags = {
     Name = "Simulated-C2-Server"
   }
-
   # OPSEC: Randomize server attributes
   user_data = <<-EOF
               #!/bin/bash
