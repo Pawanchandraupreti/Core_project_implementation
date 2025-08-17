@@ -1,0 +1,17 @@
+name: Detection Validation
+on: pull_request
+
+jobs:
+  test-sigma:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install Sigma CLI
+        run: |
+          pip install sigma-cli
+          sigma --version
+          
+      - name: Validate rules
+        run: |
+          sigma validate detection/sigma/ --fail-on-warnings
