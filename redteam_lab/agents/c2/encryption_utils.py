@@ -6,6 +6,7 @@ class Encryptor:
     def __init__(self, key: bytes = None, nonce: bytes = None):
         self.key = key or os.urandom(32)
         self.nonce = nonce or os.urandom(12)
+        
     def encrypt(self, plaintext: str) -> bytes:
         cipher = Cipher(
             algorithms.AES(self.key),
