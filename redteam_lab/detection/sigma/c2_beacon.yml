@@ -7,6 +7,7 @@ logsource:
     category: network
 detection:
     selection:
+    
         dst_port: 443
         packet_size|gt: 128
         ttl|in: [64, 128, 255]
