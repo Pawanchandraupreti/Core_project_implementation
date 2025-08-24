@@ -5,6 +5,7 @@ description: Detects randomized encrypted beacon patterns
 author: Your Name
 logsource:
     category: network
+
 detection:
     selection:
         dst_port: 443
