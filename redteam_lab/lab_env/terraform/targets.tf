@@ -7,6 +7,7 @@ resource "aws_instance" "victim" {
     Name = "Victim-${count.index}"
     Role = "target"
   }
+  
   user_data = <<-EOF
               #!/bin/bash
               apt-get update
