@@ -56,7 +56,6 @@ class BeaconSimulator:
             key=os.urandom(32),
             nonce=os.urandom(12)
         )
-        
         # OPSEC controls
         self.user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
         self.beacon_count = 0
