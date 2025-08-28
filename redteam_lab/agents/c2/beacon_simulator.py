@@ -118,8 +118,7 @@ if __name__ == "__main__":
     # Operational security checks
     if os.geteuid() != 0:
         logger.error("This tool requires root privileges for raw socket access")
-        sys.exit(1)
-        
+        sys.exit(1) 
     if not os.path.exists("/var/log/c2_simulator.log"):
         os.mknod("/var/log/c2_simulator.log", 0o600)
     
