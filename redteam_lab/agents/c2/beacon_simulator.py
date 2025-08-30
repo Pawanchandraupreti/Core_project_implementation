@@ -122,6 +122,7 @@ if __name__ == "__main__":
     if not os.path.exists("/var/log/c2_simulator.log"):
         os.mknod("/var/log/c2_simulator.log", 0o600)
     
+    
     # Example usage
     simulator = BeaconSimulator(
         c2_servers=["192.168.1.100", "10.0.0.15"],
