@@ -14,6 +14,7 @@ class Encryptor:
             modes.GCM(self.nonce),
             backend=default_backend()
             
+            
         )
         encryptor = cipher.encryptor()
         return encryptor.update(plaintext.encode()) + encryptor.finalize()
