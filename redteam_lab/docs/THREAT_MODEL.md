@@ -10,7 +10,6 @@
 | Elevation     | Non-root execution                  | IAM roles      |
 
 ## Attack Tree
-
 ```mermaid
 graph TD
     A[Establish C2] --> B[Encrypted Channel]
