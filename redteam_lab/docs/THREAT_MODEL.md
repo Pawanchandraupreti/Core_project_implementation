@@ -11,6 +11,7 @@
 
 ## Attack Tree
 ```mermaid
+
 graph TD
     A[Establish C2] --> B[Encrypted Channel]
     A --> C[Persistence]
