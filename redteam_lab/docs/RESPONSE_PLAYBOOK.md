@@ -2,6 +2,7 @@
 
 ### Triage Steps
 1. **Network Analysis**
+
    ```kql
    # Elasticsearch query
    event.category:network AND destination.port:443 
