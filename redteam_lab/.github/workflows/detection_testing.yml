@@ -13,7 +13,6 @@ jobs:
         
           pip install sigma-cli
           sigma --version
-          
       - name: Validate rules
         run: |
           sigma validate detection/sigma/ --fail-on-warnings
