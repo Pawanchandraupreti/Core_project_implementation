@@ -4,4 +4,5 @@ COPY fluent.conf /fluentd/etc/
 RUN gem install fluent-plugin-elasticsearch
 
 EXPOSE 24224
+
 CMD ["fluentd"]
