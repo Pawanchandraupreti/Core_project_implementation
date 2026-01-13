@@ -24,3 +24,5 @@ jobs:
             --servers "127.0.0.1" \
             --duration 60 \
             --max-beacons 50
+
+            
