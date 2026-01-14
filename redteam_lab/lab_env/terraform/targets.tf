@@ -14,3 +14,4 @@ resource "aws_instance" "victim" {
               apt-get install -y curl net-tools
               EOF
 }
+
