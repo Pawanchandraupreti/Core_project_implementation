@@ -7,4 +7,3 @@ EXPOSE 24224
 
 CMD ["fluentd"]
 
-
