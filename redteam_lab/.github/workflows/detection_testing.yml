@@ -16,5 +16,3 @@ jobs:
       - name: Validate rules
         run: |
           sigma validate detection/sigma/ --fail-on-warnings
-
-          
