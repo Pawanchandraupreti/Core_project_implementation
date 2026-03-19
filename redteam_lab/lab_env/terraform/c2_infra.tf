@@ -12,4 +12,3 @@ resource "aws_instance" "c2_server" {
               hostnamectl set-hostname $(openssl rand -hex 4)
               EOF
 }
-
