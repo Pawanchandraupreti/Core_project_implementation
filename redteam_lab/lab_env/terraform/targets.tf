@@ -15,6 +15,3 @@ resource "aws_instance" "victim" {
               EOF
 }
 
-
-
-
