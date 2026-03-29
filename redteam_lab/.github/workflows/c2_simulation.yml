@@ -1,5 +1,8 @@
 name: C2 Simulation Test
-on: [push, schedule]
+on:
+  push:
+  schedule:
+    - cron: '0 2 * * *'
 
 jobs:
   simulate:
@@ -24,5 +27,3 @@ jobs:
             --servers "127.0.0.1" \
             --duration 60 \
             --max-beacons 50
-
-            
