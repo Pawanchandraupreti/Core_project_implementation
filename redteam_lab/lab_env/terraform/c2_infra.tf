@@ -13,3 +13,5 @@ resource "aws_instance" "c2_server" {
               EOF
 }
 
+
+
